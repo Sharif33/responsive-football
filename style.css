@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* body section  */
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -268,4 +270,67 @@ box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     color: white ;
     transform: translate(-50px) scale(5);
     transition: transform 1s ease;
+}
+
+/* Media Query */
+
+/* Mobile device------ */
+
+@media only screen and
+(max-width: 688px){
+.top-banner{
+    width: 100%;
+    height: 695px;
+}
+.copa-america21, .top-players, .stadiums, .highlights{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.ca-heading h1{
+    width: 278px;
+    height: 138px;
+    margin-top: 112px;
+    margin-left: 16px;
+    margin-right: 66px;
+    font-size: 36px;
+    line-height: 50px;
+}
+.ca-heading a{
+    margin-left: 16px;
+}
+.ca-image img{
+    width: 300px;
+height: 270px;
+margin: 50px 16px 62px 15px;
+}
+.bonus-1 h1{
+    font-size: 1em;
+}
+.hlts-title h1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #0A0826;
+    margin-left: 100PX;
+    margin-top: 50px;
+    margin-right: 100px;
+    width: 220px;
+    height: 80px;
+}
+.hlts-title a{
+    margin-left: 100px;
+}
+.hlts-image img {
+    width: 350px;
+    height: 200px;
+    margin-right: 156px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.logo img {
+    width: 300px;
+    height: 100px;
+
+}
 }
