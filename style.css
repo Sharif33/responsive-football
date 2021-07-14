@@ -14,11 +14,13 @@ body{
 /* Copa America Heading  */
 
 .top-banner{
+    width: 1440px;
     height: 677px;
     background-color: #2D25A0;
 }
 .copa-america21{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .ca-heading h1{
@@ -72,6 +74,7 @@ body{
 
 main{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items:center;
     margin-top: 70px;
@@ -87,11 +90,11 @@ main{
     grid-column-gap: 30px;
 }
 .player .player-image img{
-    width: 300px;
+    width: 330px;
     height: 256px;
 }
 .player-detail{
-    width: 300px;
+    width: 330px;
     height: 154px;
 }
 .player-name{
@@ -108,7 +111,6 @@ main{
 .player{
 width: 330px;
 height: 474px;
-left: 180px;
 padding: 15px;
 background-color: #FFFFFF;
 box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -146,4 +148,68 @@ box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     margin-top: 20px;
     margin-bottom: 0px;
     font-weight: 400;
+}
+
+/* Bonus section-1 styles */
+.bonus-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 50px;
+}
+.stadiums{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonus-1>h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+    color: #2D25A0;
+}
+.stadium-album{
+    display: flex;
+    flex-wrap: wrap;
+}
+.stadium-frame{
+    height: 250px;
+    width: 330px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.stadium img{
+    width: 100%;
+    border-radius: 10px;
+}
+.stadium-details{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
+.stadium-details h3{
+    text-align: center;
+    font-size: 1.5em;
+    color:#E02C6D;
+}
+.stadium-details p{
+    text-align: center;
+}
+.stadium-frame:hover .stadium-details{
+    display: block;
+    color: orange;
+}
+.stadium-frame:hover .stadium{
+    transform: translate(10px) scale(1.3);
+    transition: transform 2s ease-in-out;
 }
