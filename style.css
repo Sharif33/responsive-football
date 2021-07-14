@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0PX;
@@ -12,12 +14,13 @@ body{
 /* Copa America Heading  */
 
 .top-banner{
+    width: 100%;
     height: 677px;
     background-color: #2D25A0;
 }
 .copa-america21{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .ca-heading h1{
     font-size: 64px;
@@ -47,8 +50,8 @@ body{
     margin-left: 8px;
 }
 .ca-image img{
-    width: 510px;
-    height: 438px;
+    width: 556px;
+    height: 456px;
     margin-right: 141px;
     margin-top: 135px;
 }
@@ -71,7 +74,7 @@ main{
     grid-column-gap: 30px;
 }
 .player .player-image img{
-    width: 330px;
+    width: 300px;
     height: 256px;
 }
 .player-detail{
@@ -97,4 +100,37 @@ padding: 15px;
 background-color: #FFFFFF;
 box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
- 
+
+/* Footer style  */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 63px;
+}
+.logo img{
+    width: 484px;
+    height: 110px;
+    margin: 20px 0px;
+}
+.social-icons i{
+    margin-right:14px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 1.8; 
+    color: #969BAB;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #969bab4f;
+    font-size: 18px;
+    font-weight: 700;
+}
+.copyright p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
